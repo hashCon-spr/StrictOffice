@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>Home Desk</title>
+      <meta name="viewport" content="width=device-width  initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="./assets/other/style.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="main.js"></script>
+   </head>
+   <body>
+      <script>
+         document.addEventListener("DOMContentLoaded", function() {
+            if(window.innerWidth < 900)
+            {
+               $(".mobile-navbar").show()
+               $(".default-toggle").hide()
+               $(".bar-toggle").hide()
+               $(".search-bar").hide();
+            }
+            else {
+               $(".default-toggle").show();
+               $(".bar-toggle").show();
+               $(".search-bar").show();
+               $(".mobile-navbar").hide();
+            }
+         });
+      </script>
+      <header id="header">
+         <div class="nav-position d-flex justify-content-between">
+            <div class="">
+               <h1 class="logo" style="padding: 22px; position: relative;" id="logo">Logo</h1>
+            </div>
+            <div class="default-toggle">
+               <!-- <ul class="n-item">
+                  <li>
+                     <a href="#" class="">Home</a>
+                  </li>
+                  <li>
+                     <a href="#products">Products</a>
+                  </li>
+                  <li>
+                     <a href="#">Category</a>
+                     <div class="dropdown">
+                        <a class="btn btn-sm dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Category
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                  </li>
+               </ul> -->
+               <div class="search-bar" id="search-bar">
+                  <input type="text" class="input-navbar" style="background-color: #E1E5ED; width: 600px; color: black; height: 50px; transform: translateX(-50px); padding-left: 30px;" placeholder="Search..." />
+               </div>
+            </div>
+            <div class="bar-toggle" id="bar-toggle">
+               <!-- <button class="btn text-white custom-login">Login</button>
+               <button class="btn text-white custom-signup">Signup</button> -->
+               <div id="Sidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="#" onclick="closeNav()" class="clicked">Home</a>
+                  <a href="#products" class="clicked" onclick="closeNav()">Products</a>
+                  <a href="#category" class="clicked" onclick="closeNav()">Category</a>
+                  <a href="#" class="clicked" onclick="closeNav()">More And Inspiration</a>
+                  <div class="d-flex justify-content-center pt-2">
+                     <div class="col-md-4">
+                        <a href="#" class="clicked btn btn-sm bg-warning" onclick="closeNav()">Sign Up <i class="fa-solid fa-user"></i> </a>
+                     </div>
+                  </div>
+                </div>
+               <button class="text-dark btn" onclick="openNav()"><i class="fa-solid fa-bars" style="transform: translate(-40px, -10px); font-size: 25px; margin-top: 40px;"></i></button>
+            </div>
+            <div class="mobile-navbar" id="mobile-navbar">
+               <div id="Sidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="#" onclick="clickedNav()" class="clicked">Home</a>
+                  <a href="#products" class="clicked" onclick="clickedNav()">Products</a>
+                  <a href="#category" class="clicked" onclick="clickedNav()">Category</a>
+                  <a href="#" class="clicked" onclick="clickedNav()">More And Inspiration</a>
+                </div>
+               <button class="btn" onclick="OpenNavMobile()"><i class="fa-solid fa-bars" id="fa-bars" style="transform: translate(-20px, -45px); font-size: 25px; margin-top: 45px;"></i></button>
+            </div>
+         </div>
+      </header>
+
+      <!-- begin main content -->
+      <section class="" style="transform: translateY(50px);">
+         <div class="d-flex p-5">
+            <div class="row">
+               <div class="col-md-6" id="big-component" style="position: relative; transform: translateX(40px);">
+                  <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/insp_block_760_en_us_16856789080.webp" class="img-fluid" width="450" height="350" />
+                  <p>Desk, MICKE, <b>Rp1.799.000</b></p>
+                  <h5 class="fw-bold" style="width: 400px;">Get ready for upcoming schoolwork​</h5>
+                  <p class="text-secondary last-font" style="font-size: 15px; text-align: justify; width: 300px;">Get ready for school with MICKE desk, 
+                     with a clean and simple look, perfect for welcoming the mess of the coming schoolwork. ​</p>
+               </div>
+               <div class="col-md-3 x1-component" style="transform: translateX(-20px); position: relative;">
+                  <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/360/0736022_PE740349_S3.webp" width="220" height="200" class="img-fluid" />
+                  <p>MICKE, <b>Rp 849.000</b></p>
+                  <p class="text-secondary" style="width: 400px;">desk, white, 73x50 cm​</p>
+                  <button type="button" class="btn btn-sm bg-black text-white">Add <i class="fa-solid fa-cart-shopping"></i></button>
+                  <span class="fs-3"><i class="fa-regular fa-heart" id="likeComponent"></i></span>
+               </div>
+               <div class="col-md-3 x2-component" style="padding-left: 0px; transform: translateX(-50px); position: relative;">
+                  <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/360/0736018_PE740345_S3.webp" width="220" height="200" class="img-fluid" />
+                  <p>MICKE, <b>Rp 1.799.000</b></p>
+                  <p class="text-secondary" style="width: 400px;">desk, white, 105x50 cm​</p>
+                  <button type="button" class="btn btn-sm bg-black text-white">Add <i class="fa-solid fa-cart-shopping"></i></button>
+                  <span class="fs-3"><i class="fa-regular fa-heart" id="likeComponent"></i></span>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end main content -->
+
+      <!-- begin content part2 -->
+      <section class="mt-5 xl-component">
+         <div class="d-flex justify-content-center">
+            <div class="row d-flex justify-content-center">
+               <div class="col-md-2 sub-component" style="margin-right: 50px;">
+                  <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/776/0977665_PE813728_S3.webp" width="230" height="200" class="img-fluid" />
+                  <p>MICKE, <b>Rp 1.799.000</b></p>
+                  <p class="text-secondary" style="width: 400px;">desk, white, 105x50 cm​</p>
+                  <button type="button" class="btn btn-sm bg-black text-white">Add <i class="fa-solid fa-cart-shopping"></i></button>
+                  <span class="fs-3"><i class="fa-regular fa-heart" id="likeComponent"></i></span>
+               </div>
+               <div class="col-md-2 sub-component" style="margin-right: 50px;">
+                  <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/343/0734328_PE739442_S3.webp" width="230" height="200" class="img-fluid" />
+                  <p>MICKE, <b>Rp 1.799.000</b></p>
+                  <p class="text-secondary" style="width: 400px;">desk, white, 105x50 cm​</p>
+                  <button type="button" class="btn btn-sm bg-black text-white">Add <i class="fa-solid fa-cart-shopping"></i></button>
+                  <span class="fs-3"><i class="fa-regular fa-heart" id="likeComponent"></i></span>
+               </div>
+               <div class="col-md-2 sub-component" style="margin-right: 50px;">
+                  <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/789/1078976_PE857351_S3.webp" width="230" height="200" class="img-fluid" />
+                  <p>MICKE, <b>Rp 1.799.000</b></p>
+                  <p class="text-secondary" style="width: 400px;">desk, white, 105x50 cm​</p>
+                  <button type="button" class="btn btn-sm bg-black text-white">Add <i class="fa-solid fa-cart-shopping"></i></button>
+                  <span class="fs-3"><i class="fa-regular fa-heart" id="likeComponent"></i></span>
+               </div>
+               <div class="col-md-2 sub-component" style="margin-right: 50px;">
+                  <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/709/0770955_PE755649_S3.webp" width="230" height="200" class="img-fluid" />
+                  <p>MICKE, <b>Rp 1.799.000</b></p>
+                  <p class="text-secondary" style="width: 400px;">desk, white, 105x50 cm​</p>
+                  <button type="button" class="btn btn-sm bg-black text-white">Add <i class="fa-solid fa-cart-shopping"></i></button>
+                  <span class="fs-3"><i class="fa-regular fa-heart" id="likeComponent"></i></span>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end content part2 -->
+
+       <!-- begin content part3 -->
+       <section class="mt-5 mb-5 xl-component">
+         <div class="d-flex justify-content-center">
+            <div class="row d-flex justify-content-center">
+               <div class="col-md-2 sub-component" style="margin-right: 50px;">
+                  <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/360/0736024_PE740335_S3.webp" width="230" height="200" class="img-fluid" />
+                  <p>MICKE, <b>Rp 1.799.000</b></p>
+                  <p class="text-secondary" style="width: 400px;">desk, white, 105x50 cm​</p>
+                  <button type="button" class="btn btn-sm bg-black text-white">Add <i class="fa-solid fa-cart-shopping"></i></button>
+                  <span class="fs-3"><i class="fa-regular fa-heart" id="likeComponent"></i></span>
+               </div>
+               <div class="col-md-2 sub-component" style="margin-right: 50px;">
+                  <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/360/0736020_PE740347_S3.webp" width="230" height="200" class="img-fluid" />
+                  <p>MICKE, <b>Rp 1.799.000</b></p>
+                  <p class="text-secondary" style="width: 400px;">desk, white, 105x50 cm​</p>
+                  <button type="button" class="btn btn-sm bg-black text-white">Add <i class="fa-solid fa-cart-shopping"></i></button>
+                  <span class="fs-3"><i class="fa-regular fa-heart" id="likeComponent"></i></span>
+               </div>
+               <div class="col-md-2 sub-component" style="margin-right: 50px;">
+                  <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/343/0734327_PE739443_S3.webp" width="230" height="200" class="img-fluid" />
+                  <p>MICKE, <b>Rp 1.799.000</b></p>
+                  <p class="text-secondary" style="width: 400px;">desk, white, 105x50 cm​</p>
+                  <button type="button" class="btn btn-sm bg-black text-white">Add <i class="fa-solid fa-cart-shopping"></i></button>
+                  <span class="fs-3"><i class="fa-regular fa-heart" id="likeComponent"></i></span>
+               </div>
+               <div class="col-md-2 sub-component" style="margin-right: 50px;">
+                  <img src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/360/0736023_PE740350_S3.webp" width="230" height="200" class="img-fluid" />
+                  <p>MICKE, <b>Rp 1.799.000</b></p>
+                  <p class="text-secondary" style="width: 400px;">desk, white, 105x50 cm​</p>
+                  <button type="button" class="btn btn-sm bg-black text-white">Add <i class="fa-solid fa-cart-shopping"></i></button>
+                  <span class="fs-3"><i class="fa-regular fa-heart" id="likeComponent"></i></span>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end content part3 -->
+
+      
+      <!-- begin footer -->
+      <footer>
+         <div class="footer-content d-flex">
+            <div class="inline-content">
+               <h4 class="text-white">Strict Office</h4>
+               <p class="text-white"><span class="p-1"><i class="fa-solid fa-location-dot"></i></span>Bl IV/5 Ruko Darmo Park Ii Jalan 60225 Surabaya Jawa Timur</p>
+               <p class="text-white"><span class="p-1"><i class="fa-solid fa-envelope"></i></span> Xload@gmail.com</p>
+            </div>
+            <div class="inline-content">
+               <ul class="footer-inline">
+                  <li>Home</li>
+                  <li>Products</li>
+                  <li>Category</li>
+                  <li>Inspiration and More</li>
+               </ul>
+            </div>
+         </div>
+         <div class="d-flex justify-content-center" style="transform: translateY(290px);">
+            <span class="text-white m-2"><i class="fa-brands fa-whatsapp fs-3"></i></span>
+            <span class="text-white m-2"><i class="fa-brands fa-instagram fs-3"></i></span>
+            <span class="text-white m-2"><i class="fa-brands fa-x-twitter fs-3"></i></span>
+         </div>
+         <p class="text-white text-center" style="padding-top: 300px; padding-bottom: 30px;">&copy; 2024 Strict || Office</p>
+     </footer>
+   <!-- end footer -->
+   </body>
+</html>
