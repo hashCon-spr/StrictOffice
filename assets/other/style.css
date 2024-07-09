@@ -380,3 +380,25 @@ footer {
    transition: 0.1s ease-out;
    cursor: pointer;
 }
+
+/* fixing object */
+.x1-component .text-secondary {
+   transform: translateY(-13px);
+}
+.x1-component .btn {
+   transform: translateY(-14px);
+}
+.x1-component #likeComponent {
+   transform: translateY(-9px);
+}
+
+.x2-component .text-secondary {
+   transform: translateY(-13px);
+}
+.x2-component .btn {
+   transform: translateY(-14px);
+}
+.x2-component #likeComponent {
+   transform: translateY(-9px);
+}
+
