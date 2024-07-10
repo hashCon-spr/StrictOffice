@@ -96,6 +96,10 @@
       margin-top: 30px;
       margin-right: 50px;
    }
+   .custom-new img:hover {
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+   } 
+
    .custom-new .custom-label-one {
       transform: translate(-69px, -334px) !important;
    }
@@ -280,7 +284,7 @@ footer {
 }
 
 .category-content {
-   transform: translateY(-100px);
+   transform: translateY(-60px);
 }
 
 .img-caro {
@@ -299,7 +303,7 @@ footer {
 
 
 .products-content {
-   margin-bottom: 70px;
+   margin-bottom: 0px;
    transform: translateY(-140px);
 }
 
@@ -402,3 +406,22 @@ footer {
    transform: translateY(-9px);
 }
 
+/* discount part */
+.discount-box {
+   width: 220px;
+   height: 230px;
+   background-image: url('https://th.bing.com/th/id/OIP.peiaEvgS2q7fHjvtRzxfpgHaEK?w=271&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7');
+   /* opacity: 0.4; */
+   margin-left: 40px;
+   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.btn-discount {
+   outline: none;
+   outline-offset: none;
+   outline-color: none;
+   outline-width: none;
+   outline-style: none;
+   border: 2px solid white;
+   border-radius: 20px;
+   padding: 5px;
+}
