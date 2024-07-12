@@ -6,6 +6,9 @@ window.addEventListener("scroll", () => {
    const BarNav = document.querySelector("#fa-bars");
    const BarNav2 = document.querySelector(".fa-bars");
    const item = document.querySelector(".n-item");
+   
+   // shorting and filter component
+   const ShFil = document.querySelector(".custom-sh-fill");
 
    if(window.scrollY > 0) {
       header.style.background = "black";
@@ -25,6 +28,7 @@ window.addEventListener("scroll", () => {
          
       }
 
+
    }
    else {
       header.style.background = "white";
@@ -36,32 +40,10 @@ window.addEventListener("scroll", () => {
       BarNav2.style.color = "black";
       BarNav.style.color = "black";
    }
-   
+
+
 })
 
-// function SizeUpdate()
-// {
-//    window.addEventListener("resize", function() {
-//       if(window.innerWidth <= 600)
-//       {
-//          $(".mobile-navbar").removeClass("hidden").addClass("active");
-//          $(".default-toggle").addClass("hidden").removeClass("active");
-//          $(".register-component").addClass("hidden").removeClass("active");
-//          console.log("Mobile Nav");
-//       }
-//       else {
-//          $(".default-toggle").removeClass("hidden").addClass("active");
-//          $(".mobile-navbar").addClass("hidden").removeClass("active");
-//          $(".register-component").removeClass("hidden").addClass("active");
-//          console.log("Default nav");
-//       }
-      
-//    });
-// }
-
-
-// SizeUpdate()
-// window.addEventListener("resize", SizeUpdate)
 
 // side navigation script
 
