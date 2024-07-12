@@ -280,7 +280,7 @@
 footer {
    background-color: black;
    width: 100% !important;
-   height: 100% !important;
+   height: 610px;
    position: relative;
 }
 
@@ -424,7 +424,7 @@ footer {
    border-radius: 20px;
 }
 .discount-box:hover{
-   background-color: #6e84ff;
+   background-color: #2ee8cc;
    transition: 0.3s ease-out;
    cursor: pointer;
    color: white !important;
