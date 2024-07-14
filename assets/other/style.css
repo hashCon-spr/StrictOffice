@@ -219,6 +219,7 @@
 
 .search-bar {
    margin-top: 25px;
+   margin-left: 90px !important;
 }
 .search-bar input {
    border: none;
@@ -289,15 +290,33 @@ footer {
 }
 
 .img-caro {
-   cursor: pointer;
-   width: 290px !important;
-}
-.img-caro:hover {
-   transition: 0.1s linear;
-   /* box-shadow: 3px 2px 3px 2px #ABA6A6; */
+   width: 280px !important;
    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-   position: relative;
+   margin: 5px;
 }
+/* .img-caro:hover {
+   transition: 0.1s linear;
+   box-shadow: 3px 2px 3px 2px #ABA6A6;
+   position: relative;
+} */
+ .img-caro .next-caro {
+   width: 250px;
+   border-radius: 10px 10px 10px 10px;
+   transform: translate(3px, 70px);
+   color: white;
+   cursor: pointer;
+ }
+ .next-caro p {
+   padding: 10px;
+}
+.img-caro .next-caro:hover {
+   width: 265px;
+   transition: 0.3s ease-out;
+}
+.img-caro .next-caro::after {
+   transition: 0.3s ease-out;
+}
+
 .img-fill {
    padding: 10px;
 }
@@ -479,4 +498,25 @@ footer {
    font-size: 22px;
    color: #A9B3B5;
    text-align: justify;
+}
+
+.bag-container1 {
+   transform: translate(30px, 35px);
+   /* background-color: black;
+   width: 45px;
+   height: 45px; */
+}
+.bag-container2 {
+   transform: translate(25px, 35px);
+   /* background-color: black;
+   width: 45px;
+   height: 45px; */
+}
+.bag-container1 .fa-bag-shopping {
+   font-size: 20px !important;
+}
+
+/* similar hover */
+.similar-hover {
+   cursor: pointer;
 }

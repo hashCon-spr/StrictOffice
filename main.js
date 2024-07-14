@@ -5,7 +5,8 @@ window.addEventListener("scroll", () => {
    const header = document.querySelector("#header");
    const BarNav = document.querySelector("#fa-bars");
    const BarNav2 = document.querySelector(".fa-bars");
-   const item = document.querySelector(".n-item");
+   const SMH = document.querySelector(".similar-hover1");
+   const SMH2 = document.querySelector(".similar-hover2");
    
    // shorting and filter component
    const ShFil = document.querySelector(".custom-sh-fill");
@@ -18,6 +19,9 @@ window.addEventListener("scroll", () => {
       document.getElementById("logo").style.color = "white";
       BarNav2.style.color = "white";
       BarNav.style.color = "white";
+      SMH.style.color = "white";
+      SMH2.style.color = "white";
+
       
 
       if(window.innerWidth < 900)
@@ -39,6 +43,9 @@ window.addEventListener("scroll", () => {
       BarNav.style.marginRight = "0px";
       BarNav2.style.color = "black";
       BarNav.style.color = "black";
+      SMH.style.color = "black";
+      SMH2.style.color = "black";
+
    }
 
 

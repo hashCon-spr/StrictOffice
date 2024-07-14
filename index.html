@@ -29,6 +29,8 @@
                $(".bar-toggle").hide();
                $("#search-bar").hide();
                $(".defaultNavMobile").hide();
+               $(".similar-hover1").hide();
+               $(".similar-hover2").hide();
                console.log("mobile layout");
             }
             else {
@@ -41,36 +43,21 @@
          }
       </script>
       <header id="header">
-      <div class="nav-position d-flex justify-content-between">
+      <div class="nav-position d-flex justify-content-around">
          <div class="">
-            <h1 class="logo" style="padding: 22px; position: relative;" id="logo">Logo</h1>
+            <h1 class="logo" style="padding: 22px; position: relative; margin-right: 20px;" id="logo">Logo</h1>
          </div>
          <div class="default-toggle">
-            <!-- <ul class="n-item">
-               <li>
-                  <a href="#" class="">Home</a>
-               </li>
-               <li>
-                  <a href="#products">Products</a>
-               </li>
-               <li>
-                  <a href="#">Category</a>
-                  <div class="dropdown">
-                     <a class="btn btn-sm dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                       Category
-                     </a>
-                     <ul class="dropdown-menu">
-                       <li><a class="dropdown-item" href="#">Action</a></li>
-                       <li><a class="dropdown-item" href="#">Another action</a></li>
-                       <li><a class="dropdown-item" href="#">Something else here</a></li>
-                     </ul>
-                   </div>
-               </li>
-            </ul> -->
             <div class="search-bar" id="search-bar">
                <input type="text" class="input-navbar" style="background-color: #E1E5ED; width: 600px; color: black; height: 50px; transform: translateX(-50px); padding-left: 30px;" placeholder="Search..." />
             </div>
          </div>
+         <span class="bag-container2 similar-hover1"><i class="fa-solid fa-user" style="font-size: 20px; transform: translateX(20px);"></i></span>
+         <span class="bag-container1 similar-hover2" style="margin-right: 25px;"><i class="fa-solid fa-bag-shopping">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 8px;">
+               9
+            <span class="visually-hidden">unread messages</span>
+         </i></span>
          <div class="bar-toggle d-flex justify-content-center" id="bar-toggle">
             <div id="Sidenav" class="sidenav">
                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -78,13 +65,13 @@
                <a href="#products" class="clicked" onclick="closeNav()">Products</a>
                <a href="#category" class="clicked" onclick="closeNav()">Category</a>
                <a href="#" class="clicked" onclick="closeNav()">More And Inspiration</a>
-               <div class="d-flex justify-content-center pt-2">
+               <!-- <div class="d-flex justify-content-center pt-2">
                   <div class="col-md-4">
                      <a href="#" class="clicked btn btn-sm bg-warning" onclick="closeNav()">Sign Up <i class="fa-solid fa-user"></i> </a>
                   </div>
-               </div>
+               </div> -->
              </div>
-            <button class="text-dark btn defaultNavMobile" onclick="openNav()"><i class="fa-solid fa-bars" style="transform: translate(-40px, -16px); font-size: 25px; margin-top: 40px;"></i></button>
+            <button class="text-dark btn defaultNavMobile" onclick="openNav()"><i class="fa-solid fa-bars" style="transform: translate(-20px, -20px); font-size: 25px; margin-top: 40px;"></i></button>
          </div>
          <div class="mobile-navbar" id="mobile-navbar">
             <div id="Sidenav" class="sidenav">
@@ -283,26 +270,34 @@
 
       <!-- begin category -->
 
-        <div class="category-content d-flex justify-content-center" id="category">
+        <div class="category-content d-flex justify-content-center" id="category" style="margin-bottom: 150px;">
          <section>
             <h1 class="text-center category-text fw-bold" style="">Category</h1>
             <div class="d-flex flex-nowrap text-center mt-4">
                <div class="row">
-               <div class="col-md-3 img-caro" onclick="window.location = 'HomeDesk.html'">
-                  <img src="./assets/img/homeDesk.jpg" width="270" height="270" class="img-fluid img-fill rounded" />
-                  <p class="mt-3">Home Desk</p>
+                  <div class="col-md-3 img-caro rounded" onclick="window.location = 'HomeDesk.html'">
+                     <div class="next-caro bg-danger">
+                        <img src="./assets/img/homeDesk.jpg" width="270" height="270" class="img-fluid img-fill rounded" />
+                        <p class="mt-3">Home Desk</p>
+                     </div>
+                  </div>
+               <div class="col-md-3 img-caro rounded" onclick="window.location = 'Cushions.html'">
+                  <div class="next-caro bg-danger">
+                     <img src="./assets/img/cushions.jpg" class="img-fluid img-fill rounded" width="270" height="270" />
+                     <p class="mt-3">Cushions</p>
+                  </div>
                </div>
-               <div class="col-md-3 img-caro" onclick="window.location = 'Cushions.html'">
-                  <img src="./assets/img/cushions.jpg" class="img-fluid img-fill rounded" width="270" height="270" />
-                  <p class="mt-3">Cushions</p>
+               <div class="col-md-3 img-caro rounded" onclick="window.location = 'chestOfDrawers.html'">
+                  <div class="next-caro bg-danger">
+                     <img src="./assets/img/chestOfDrawers.jpg" class="img-fluid img-fill rounded" width="270" height="270" />
+                     <p class="mt-3">Chest Of Drawers</p>
+                  </div>
                </div>
-               <div class="col-md-3 img-caro" onclick="window.location = 'chestOfDrawers.html'">
-                  <img src="./assets/img/chestOfDrawers.jpg" class="img-fluid img-fill rounded" width="270" height="270" />
-                  <p class="mt-3">Chest Of Drawers</p>
-               </div>
-               <div class="col-md-3 img-caro" onclick="window.location = 'Sofa.html'">
-                  <img src="./assets/img/sofa.jpg" class="img-fluid img-fill rounded" width="270" height="270" />
-                  <p class="mt-3">Sofa</p>
+               <div class="col-md-3 img-caro rounded" onclick="window.location = 'Sofa.html'">
+                  <div class="next-caro bg-danger">
+                     <img src="./assets/img/sofa.jpg" class="img-fluid img-fill rounded" width="270" height="270" />
+                     <p class="mt-3">Sofa</p>
+                  </div>
                </div>
                </div>
             </div>
