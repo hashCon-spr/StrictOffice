@@ -30,52 +30,35 @@
          });
       </script>
       <header id="header">
-         <div class="nav-position d-flex justify-content-between">
+         <div class="nav-position d-flex justify-content-around">
             <div class="">
-               <h1 class="logo" style="padding: 22px; position: relative;" id="logo">Logo</h1>
+               <h1 class="logo" style="padding: 22px; position: relative; margin-right: 20px;" id="logo">Logo</h1>
             </div>
             <div class="default-toggle">
-               <!-- <ul class="n-item">
-                  <li>
-                     <a href="#" class="">Home</a>
-                  </li>
-                  <li>
-                     <a href="#products">Products</a>
-                  </li>
-                  <li>
-                     <a href="#">Category</a>
-                     <div class="dropdown">
-                        <a class="btn btn-sm dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Category
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </div>
-                  </li>
-               </ul> -->
                <div class="search-bar" id="search-bar">
-                  <input type="text" class="input-navbar" style="background-color: #E1E5ED; width: 600px; color: black; height: 50px; transform: translateX(-50px); padding-left: 30px;" placeholder="Search..." />
+                  <input type="text" class="input-navbar" style="background-color: #E1E5ED; width: 600px; color: black; height: 50px; transform: translateX(-30px); padding-left: 30px;" placeholder="Search..." />
                </div>
             </div>
-            <div class="bar-toggle" id="bar-toggle">
-               <!-- <button class="btn text-white custom-login">Login</button>
-               <button class="btn text-white custom-signup">Signup</button> -->
+            <span class="bag-container2 similar-hover1"><i class="fa-solid fa-user" style="font-size: 20px; transform: translateX(20px);"></i></span>
+            <span class="bag-container1 similar-hover2" style="margin-right: 25px;"><i class="fa-solid fa-bag-shopping">
+               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 8px;">
+                  9
+               <span class="visually-hidden">unread messages</span>
+            </i></span>
+            <div class="bar-toggle d-flex justify-content-center" id="bar-toggle">
                <div id="Sidenav" class="sidenav">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                  <a href="#" onclick="closeNav()" class="clicked">Home</a>
+                  <a href="index.html" onclick="closeNav()" class="clicked">Home</a>
                   <a href="#products" class="clicked" onclick="closeNav()">Products</a>
                   <a href="#category" class="clicked" onclick="closeNav()">Category</a>
                   <a href="#" class="clicked" onclick="closeNav()">More And Inspiration</a>
-                  <div class="d-flex justify-content-center pt-2">
+                  <!-- <div class="d-flex justify-content-center pt-2">
                      <div class="col-md-4">
                         <a href="#" class="clicked btn btn-sm bg-warning" onclick="closeNav()">Sign Up <i class="fa-solid fa-user"></i> </a>
                      </div>
-                  </div>
+                  </div> -->
                 </div>
-               <button class="text-dark btn" onclick="openNav()"><i class="fa-solid fa-bars" style="transform: translate(-40px, -10px); font-size: 25px; margin-top: 40px;"></i></button>
+               <button class="text-dark btn defaultNavMobile" onclick="openNav()"><i class="fa-solid fa-bars" style="transform: translate(-20px, -20px); font-size: 25px; margin-top: 40px;"></i></button>
             </div>
             <div class="mobile-navbar" id="mobile-navbar">
                <div id="Sidenav" class="sidenav">
@@ -85,10 +68,10 @@
                   <a href="#category" class="clicked" onclick="clickedNav()">Category</a>
                   <a href="#" class="clicked" onclick="clickedNav()">More And Inspiration</a>
                 </div>
-               <button class="btn" onclick="OpenNavMobile()"><i class="fa-solid fa-bars" id="fa-bars" style="transform: translate(-20px, -45px); font-size: 25px; margin-top: 45px;"></i></button>
+               <button class="btn" onclick="OpenNavMobile()"><i class="fa-solid fa-bars" style="font-size: 25px; margin-top: 45px;" id="fa-bars"></i></button>
             </div>
          </div>
-      </header>
+         </header>
 
       <!-- begin main content -->
       <section class="" style="transform: translateY(50px);">
