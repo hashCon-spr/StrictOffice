@@ -16,16 +16,20 @@
          document.addEventListener("DOMContentLoaded", function() {
             if(window.innerWidth < 900)
             {
-               $(".mobile-navbar").show()
-               $(".default-toggle").hide()
-               $(".bar-toggle").hide()
-               $(".search-bar").hide();
+               $(".mobile-navbar").show();
+               $(".bar-toggle").hide();
+               $("#search-bar").hide();
+               $(".defaultNavMobile").hide();
+               $(".similar-hover1").show();
+               $(".similar-hover2").show();
+               console.log("mobile layout");
             }
             else {
-               $(".default-toggle").show();
                $(".bar-toggle").show();
-               $(".search-bar").show();
+               $("#search-bar").show();
                $(".mobile-navbar").hide();
+               $(".defaultNavMobile").show();
+               console.log("default layout");
             }
          });
       </script>

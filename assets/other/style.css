@@ -21,7 +21,7 @@
    
    .mobile-navbar {  
       cursor: pointer;
-      transform: translate(-20px, 30px);
+      transform: translate(-5px, 30px);
       font-size: 15px;
    }
 
@@ -30,7 +30,7 @@
       transform: translate(5px, -400px) !important;
    }
    .main-content h1 {
-      font-size: 23px !important;
+      font-size: 20px !important;
    }
    .main-content p {
       font-size: 14px !important;
@@ -97,7 +97,7 @@
       margin-top: 30px;
       margin-right: 50px;
    }
-   .custom-new img:hover {
+   .custom-new img {
       box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
    } 
 
@@ -164,6 +164,16 @@
    }
    .xl-component .sub-component #likeComponent {
       transform: translate(3px, -12px);
+   }
+
+   /* mobile navbar layout */
+   .similar-hover1 {
+      transform: translate(40px, 33px) !important;
+      margin-left: 30px;
+   }
+   .similar-hover2 {
+      transform: translate(40px, 33px) !important;
+      margin-left: 30px;
    }
 
 }
@@ -508,22 +518,17 @@ footer {
 }
 
 .bag-container1 {
-   transform: translate(30px, 35px);
+   transform: translate(30px, 38px) !important;
    /* background-color: black;
    width: 45px;
    height: 45px; */
 }
 .bag-container2 {
-   transform: translate(25px, 35px);
+   transform: translate(25px, 38px) !important;
    /* background-color: black;
    width: 45px;
    height: 45px; */
 }
 .bag-container1 .fa-bag-shopping {
    font-size: 20px !important;
-}
-
-/* similar hover */
-.similar-hover {
-   cursor: pointer;
 }
