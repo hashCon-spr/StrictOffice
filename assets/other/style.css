@@ -74,7 +74,8 @@
    }
 
    #mobile-navbar .fa-bars {
-      transform: translate(5px, -50px) !important;
+      transform: translate(5px, -48px) !important;
+      font-size: 22px !important;
    }
    
    .main-img-content {
@@ -95,7 +96,7 @@
       width: 310px;
       padding: 0px;
       margin-top: 30px;
-      margin-right: 50px;
+      margin-right: 41px !important;
    }
    .custom-new img {
       box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
@@ -108,7 +109,13 @@
       margin-bottom: 5px;
    }
    #products {
-      margin-left: 30px;
+      /* margin-left: 30px; */
+      margin-bottom: 100px;
+      width: 100%;
+      height: 1450px;
+   }
+   #products .custom-label-one {
+      transform: translate(-1px, -355px) !important;
    }
     
 
@@ -167,14 +174,56 @@
    }
 
    /* mobile navbar layout */
-   .similar-hover1 {
-      transform: translate(40px, 33px) !important;
-      margin-left: 30px;
+   .similar-hover1 .fa-user{
+      transform: translate(36px, -5px) !important;
+      /* font-size: 14px !important; */
+      margin-right: 15px;
    }
-   .similar-hover2 {
-      transform: translate(40px, 33px) !important;
-      margin-left: 30px;
+   .similar-hover2 .fa-bag-shopping{
+      transform: translate(32px, -5px) !important;
+      /* font-size: 12px !important; */
+      margin-right: 30px;
    }
+   /* optional choose */
+   /* .similar-hover2 .translate-middle {
+      font-size: 4px !important;
+   } */
+
+   /* discounts */
+   .main-discount {
+      margin-bottom: 130px !important;
+      width: 100% !important;
+      height: 1950px !important;
+      background-color: #E1E5ED !important;
+   }
+   .main-discount .discount-box {
+      width: 320px;
+      height: 420px;
+      margin-bottom: 30px;
+   }
+   .discount-box p {
+      text-align: justify;
+   }
+   .discount-box .btn-discount {
+      font-size: 12px !important;
+      width: 95px !important;
+      margin: 1px !important; 
+      padding: 6px !important;
+   }
+
+   /* main-custom-new */
+   .main-custom-new {
+      transform: translateX(18px) !important;
+      /* margin-left: 30px !important; */
+   }
+
+   /* carosuel part */
+   .carosuel-part img {
+      width: 100% !important;
+      height: 700px !important;
+      object-fit: cover;
+   }
+
 
 }
 
@@ -339,8 +388,11 @@ footer {
 
 
 .products-content {
-   margin-bottom: 0px;
+   margin-bottom: 200px;
    transform: translateY(-140px);
+   background-color: black;
+   width: 100%; 
+   height: 380px;
 }
 
 /* active */
@@ -531,4 +583,11 @@ footer {
 }
 .bag-container1 .fa-bag-shopping {
    font-size: 20px !important;
+}
+
+.custom-new {
+   cursor: pointer;
+}
+.custom-new:hover {
+   transform: scale(1) !important;
 }
