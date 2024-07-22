@@ -180,7 +180,7 @@
       margin-right: 15px;
    }
    .similar-hover2 .fa-bag-shopping{
-      transform: translate(32px, -5px) !important;
+      transform: translate(34px, -5px) !important;
       /* font-size: 12px !important; */
       margin-right: 30px;
    }
@@ -222,6 +222,40 @@
       width: 100% !important;
       height: 700px !important;
       object-fit: cover;
+   }
+
+   /* custom build content */
+   .second-build-content {
+      width: 300px !important;
+   }
+   .second-build-content p{
+      font-size: 13px !important;
+   }
+
+   /* more content */
+   .more-content .element-1 {
+      transform: translateX(100px);
+   }
+   .more-content .element-2 {
+      transform: translate(150px, 7px);
+   }
+
+   /* custom-build-content */
+   .custom-build-content {
+      margin-bottom: 100px;
+      height: 830px !important;
+   }
+   .img-build-furniture {
+      width: 100% !important;
+      margin-top: 700px !important;
+   }
+   .main-build-content {
+      font-size: 18px !important; 
+      transform: translate(10px, 350px) !important;
+      position: absolute;
+   }
+   .second-build-content {
+      transform: translate(10px, -1150px) !important;
    }
 
 
@@ -591,3 +625,4 @@ footer {
 .custom-new:hover {
    transform: scale(1) !important;
 }
+
