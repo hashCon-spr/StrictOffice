@@ -5,6 +5,7 @@ window.addEventListener("scroll", () => {
    const header = document.querySelector("#header");
    const BarNav = document.querySelector("#fa-bars");
    const BarNav2 = document.querySelector(".fa-bars");
+   // const Mic = document.querySelector(".fa-microphone");
    const SMH = document.querySelector(".similar-hover1");
    const SMH2 = document.querySelector(".similar-hover2");
    
@@ -21,6 +22,7 @@ window.addEventListener("scroll", () => {
       BarNav.style.color = "white";
       SMH.style.color = "white";
       SMH2.style.color = "white";
+      // Mic.style.color = "white";
 
       
 
@@ -45,6 +47,7 @@ window.addEventListener("scroll", () => {
       BarNav.style.color = "black";
       SMH.style.color = "black";
       SMH2.style.color = "black";
+      // Mic.style.color = "black";
 
    }
 
@@ -76,5 +79,3 @@ function OpenNavMobile()
    document.getElementById("Sidenav").style.width = "100%";
    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
-
-

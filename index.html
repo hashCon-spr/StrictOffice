@@ -15,6 +15,7 @@
       <script>
          document.addEventListener("DOMContentLoaded", function() {
             HandleWindow();
+            $("body").removeClass(".modal");
          });
 
          // window.addEventListener("resize", () => {
@@ -41,6 +42,30 @@
                console.log("default layout");
             }
          }
+
+         var modal = `<div class="modal" tabindex="-1">
+               <div class="modal-dialog">
+                 <div class="modal-content">
+                   <div class="modal-header">
+                     <h5 class="modal-title">Modal title</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   </div>
+                   <div class="modal-body">
+                     <p>Modal body text goes here.</p>
+                   </div>
+                   <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                     <button type="button" class="btn btn-primary">Save changes</button>
+                   </div>
+                 </div>
+               </div>
+             </div>`;
+
+         function VoiceActive() 
+         {
+            $("body").append(modal);
+         }
+
       </script>
       <header id="header">
       <div class="nav-position d-flex justify-content-around">
@@ -48,9 +73,11 @@
             <h1 class="logo" style="padding: 22px; position: relative; margin-right: 20px;" id="logo">Logo</h1>
          </div>
          <div class="default-toggle">
+            <button class="btn" style="transform: translate(63px, 32px); position: absolute; z-index: 100;" onclick="VoiceActive()"><i class="fa-solid fa-microphone" style="font-size: 18px; color: black;"></i></button>
             <div class="search-bar" id="search-bar">
                <input type="text" class="input-navbar" style="background-color: #E1E5ED; width: 600px; color: black; height: 50px; transform: translateX(-30px); padding-left: 30px;" placeholder="Search..." />
             </div>
+           
          </div>
          <span class="bag-container2 similar-hover1" style="cursor: pointer;"><i class="fa-solid fa-user" style="font-size: 20px; transform: translateX(20px);"></i></span>
          <span class="bag-container1 similar-hover2" style="margin-right: 25px; cursor: pointer;"><i class="fa-solid fa-bag-shopping">
@@ -76,6 +103,7 @@
          <div class="mobile-navbar" id="mobile-navbar">
             <div id="Sidenav" class="sidenav">
                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <!-- <input type="text" class="form-control" style="background-color: #E1E5ED; width: 200px;" placeholder="Search..." /> -->
                <a href="#" onclick="clickedNav()" class="clicked">Home</a>
                <a href="#products" class="clicked" onclick="clickedNav()">Products</a>
                <a href="#category" class="clicked" onclick="clickedNav()">Category</a>
@@ -187,6 +215,8 @@
                         </div>
                      </div>
                   </div>
+                  <!-- <span class="previous-element"></span>
+                  <span class="next-element"></span> -->
             </section>
         </div>
       <!-- end products -->

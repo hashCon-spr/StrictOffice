@@ -74,13 +74,12 @@
    }
 
    #mobile-navbar .fa-bars {
-      transform: translate(5px, -48px) !important;
-      font-size: 22px !important;
+      transform: translate(5px, -46px) !important;
+      font-size: 20px !important;
    }
    
    .main-img-content {
       width: 395px !important;
-      
    }  
 
    .footer {
@@ -175,14 +174,14 @@
 
    /* mobile navbar layout */
    .similar-hover1 .fa-user{
-      transform: translate(36px, -5px) !important;
-      /* font-size: 14px !important; */
-      margin-right: 15px;
+      transform: translate(44px, -5px) !important;
+      font-size: 18px !important;
+      margin-right: 13px;
    }
    .similar-hover2 .fa-bag-shopping{
-      transform: translate(34px, -5px) !important;
-      /* font-size: 12px !important; */
-      margin-right: 30px;
+      transform: translate(39px, -5px) !important;
+      font-size: 12px !important;
+      margin-right: 28px;
    }
    /* optional choose */
    /* .similar-hover2 .translate-middle {
@@ -229,10 +228,13 @@
       width: 300px !important;
    }
    .second-build-content p{
-      font-size: 13px !important;
+      font-size: 15px !important;
    }
 
    /* more content */
+   .more-content {
+      margin-top: 200px !important;
+   }
    .more-content .element-1 {
       transform: translateX(100px);
    }
@@ -245,17 +247,22 @@
       margin-bottom: 100px;
       height: 830px !important;
    }
+   .custom-build-content .btn-danger {
+      width: 95px;
+      height: 35px !important;
+      padding: 0px !important;
+   }
    .img-build-furniture {
       width: 100% !important;
-      margin-top: 700px !important;
+      margin-top: 790px !important;
    }
    .main-build-content {
-      font-size: 18px !important; 
+      font-size: 22px !important; 
       transform: translate(10px, 350px) !important;
       position: absolute;
    }
    .second-build-content {
-      transform: translate(10px, -1150px) !important;
+      transform: translate(10px, -1230px) !important;
    }
 
 
@@ -323,11 +330,12 @@
    border-radius: 20px;
    padding: 10px;
 }
-.search-bar::placeholder {
-   color: white !important;
-   padding: 20px !important;
+.search-bar input::placeholder {
+   padding: 10px !important;
 }
-
+.search-bar input:focus {
+   padding-left: 40px !important;
+}
 
 .main-content {
    position: relative;
@@ -626,3 +634,13 @@ footer {
    transform: scale(1) !important;
 }
 
+/* prev and next elements */
+.previous-element {
+   background-color: #345DFF;
+   position: absolute;
+}
+
+/* block layout */
+.bd {
+   display: block;
+}
