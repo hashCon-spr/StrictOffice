@@ -327,15 +327,17 @@
    outline-width: none;
    outline-style: none;
    outline-color: none;
-   border-radius: 20px;
-   padding: 10px;
+   border-radius: 30px;
+   padding-left: 50px !important;
 }
-.search-bar input::placeholder {
-   padding: 10px !important;
+/* .search-bar input::placeholder {
+   padding: 20px !important;
+   padding-right: 0px !important;
 }
 .search-bar input:focus {
-   padding-left: 40px !important;
-}
+   margin-left: 20px !important;
+   padding: 20px !important;
+} */
 
 .main-content {
    position: relative;
@@ -643,4 +645,49 @@ footer {
 /* block layout */
 .bd {
    display: block;
+}
+
+/* voice search animation */
+.wave-container {
+   position: relative;
+   width: 200px;
+   height: 200px;
+   margin-top: 100px;
+   margin-left: 150px;
+}
+.wave-container .fa-microphone {
+   position: absolute;
+   font-size: 36px; 
+   z-index: 100;
+   transform: translate(90px, 80px);
+}
+.close-voice {
+   margin-left: 700px;
+   margin-top: 20px;
+   width: 40px;
+   height: 40px;
+   /* border-radius: 30px; */
+}
+
+.circle {
+   width: 200px;
+   height: 200px;
+   /* background-color: #61dafb; */
+
+   background-color: red;
+   border-radius: 50%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   animation: wave 2s infinite ease-in-out;
+}
+
+@keyframes wave {
+   0%, 100% {
+       transform: translate(-50%, -50%) scale(1);
+   }
+   50% {
+       transform: translate(-50%, -50%) scale(1.2);
+   }
 }
