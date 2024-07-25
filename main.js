@@ -13,10 +13,10 @@ window.addEventListener("scroll", () => {
    const ShFil = document.querySelector(".custom-sh-fill");
 
    if(window.scrollY > 0) {
+      header.style.width = "100%";
       header.style.background = "black";
       header.style.transition = "1s ease-out";
       header.style.position = "fixed";
-      header.style.width = "100%";
       document.getElementById("logo").style.color = "white";
       BarNav2.style.color = "white";
       BarNav.style.color = "white";
@@ -79,3 +79,18 @@ function OpenNavMobile()
    document.getElementById("Sidenav").style.width = "100%";
    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
+
+// accessing audio
+// function GetLocalStream()
+// {
+//    navigator.mediaDevices.getUserMedia(
+//       {
+//          video: false,
+//          audio: true
+//       }
+//    ).then((stream) => {
+//       window.GetLocalStream();
+//       console.log(stream)
+//    })
+
+// }

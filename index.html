@@ -24,7 +24,7 @@
 
          function HandleWindow() {
             console.log(window.innerWidth)
-            if(window.innerWidth < 900)
+            if(window.innerWidth < 700)
             {
                $(".mobile-navbar").show();
                $(".bar-toggle").hide();
@@ -33,6 +33,7 @@
                $(".similar-hover1").show();
                $(".similar-hover2").show();
                $(".fa-magnifying-glass").hide();
+               $(".fa-microphone").hide();
                console.log("mobile layout");
             }
             else {
@@ -105,7 +106,7 @@
             <button class="text-dark btn defaultNavMobile" onclick="openNav()"><i class="fa-solid fa-bars" style="transform: translate(-20px, -19px); font-size: 23px; margin-top: 40px;"></i></button>
          </div>
          <div class="mobile-navbar" id="mobile-navbar">
-            <div id="Sidenav" class="sidenav">
+            <div id="Sidenav" class="sidenav d-flex">
                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                <!-- <input type="text" class="form-control" style="background-color: #E1E5ED; width: 200px;" placeholder="Search..." /> -->
                <a href="#" onclick="clickedNav()" class="clicked">Home</a>

@@ -6,7 +6,22 @@
    } */
    
 }
-@media screen and (min-width: 300px) and (max-width: 600px)  
+
+@media screen and (min-width: 200px) and (max-width: 300px)
+{
+   #mobile-navbar .fa-bars {
+      transform: translateX(10px) !important;
+   }
+   /* .similar-hover2 .fa-bag-shopping {
+      transform: translateX(-10px) !important;
+   }
+   .similar-hover1 .fa-user {
+      transform: translateX(10px) !important;
+      margin-right: 70px !important;
+   } */
+}  
+
+@media screen and (min-width: 310px) and (max-width: 400px)  
 {
 
    body {
@@ -37,7 +52,7 @@
    }
    
    .category-content {
-      margin-left: 70px;
+      margin-left: 65px;
    }
    .category-text {
       text-align: center;
@@ -83,7 +98,7 @@
    }  
 
    .footer {
-      width: 1000px !important;
+      width: 100%;
       position: relative;
    }
 
@@ -199,6 +214,7 @@
       width: 320px;
       height: 420px;
       margin-bottom: 30px;
+      transform: translateX(-5px);
    }
    .discount-box p {
       text-align: justify;
@@ -297,7 +313,7 @@
    position: relative;
    z-index: 100;
    background-color: white;
-   width: 100%;
+   width: 100% !important;
 }
 /* .nav-position {
 } */
