@@ -76,7 +76,11 @@ function closeNav() {
 // open nav mobile
 function OpenNavMobile()
 {
-   document.getElementById("Sidenav").style.width = "100%";
+   document.querySelector(".mobile-navbar .sidenav").style.overflow = "auto";
+   document.querySelector(".mobile-navbar .sidenav").style.width = "100%";
+   document.querySelector(".mobile-navbar .sidenav").style.height = "100%";
+
+
    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 

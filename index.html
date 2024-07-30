@@ -24,12 +24,12 @@
 
          function HandleWindow() {
             console.log(window.innerWidth)
-            if(window.innerWidth < 700)
+            if(window.innerWidth < 900)
             {
-               $(".mobile-navbar").show();
-               $(".bar-toggle").hide();
+               $(".mobile-navbar").ajaxSend()
+               $("#bar-toggle").remove();
                $("#search-bar").hide();
-               $(".defaultNavMobile").hide();
+               $(".defaultNav").hide();
                $(".similar-hover1").show();
                $(".similar-hover2").show();
                $(".fa-magnifying-glass").hide();
@@ -37,10 +37,10 @@
                console.log("mobile layout");
             }
             else {
-               $(".bar-toggle").show();
+               $("#bar-toggle").show();
                $("#search-bar").show();
                $(".mobile-navbar").hide();
-               $(".defaultNavMobile").show();
+               $(".defaultNav").show();
                console.log("default layout");
             }
          }
@@ -97,18 +97,12 @@
                <a href="#products" class="clicked" onclick="closeNav()">Products</a>
                <a href="#category" class="clicked" onclick="closeNav()">Category</a>
                <a href="#" class="clicked" onclick="closeNav()">More And Inspiration</a>
-               <!-- <div class="d-flex justify-content-center pt-2">
-                  <div class="col-md-4">
-                     <a href="#" class="clicked btn btn-sm bg-warning" onclick="closeNav()">Sign Up <i class="fa-solid fa-user"></i> </a>
-                  </div>
-               </div> -->
              </div>
-            <button class="text-dark btn defaultNavMobile" onclick="openNav()"><i class="fa-solid fa-bars" style="transform: translate(-20px, -19px); font-size: 23px; margin-top: 40px;"></i></button>
+            <button class="text-dark btn defaultNav" onclick="openNav()"><i class="fa-solid fa-bars" style="transform: translate(-20px, -19px); font-size: 23px; margin-top: 40px;"></i></button>
          </div>
          <div class="mobile-navbar" id="mobile-navbar">
-            <div id="Sidenav" class="sidenav d-flex">
+            <div id="Sidenav" class="sidenav">
                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-               <!-- <input type="text" class="form-control" style="background-color: #E1E5ED; width: 200px;" placeholder="Search..." /> -->
                <a href="#" onclick="clickedNav()" class="clicked">Home</a>
                <a href="#products" class="clicked" onclick="clickedNav()">Products</a>
                <a href="#category" class="clicked" onclick="clickedNav()">Category</a>
@@ -147,7 +141,7 @@
 
 
       <!-- begin content -->
-        <div class="main-content text-center">
+        <div class="main-content">
           <h1 class="text-white fs-3x">Welcome to FURNISE INDONESIA</h1>
           <p class="text-white fs-5">PT FURNISE is provide furnitures that our focused</p>
           <p class="text-white fs-5" style="transform: translateY(-19px);">we commitee for to maintain our quality</p>

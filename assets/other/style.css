@@ -39,6 +39,40 @@
       transform: translate(-5px, 30px);
       font-size: 15px;
    }
+   .mobile-navbar .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      right: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+   }
+   .mobile-navbar .sidenav a {
+      /* padding: 8px 8px 8px 32px;
+       */
+      text-align: center;
+      text-decoration: none;
+      font-size: 20px;
+      display: block;
+      transition: 0.3s;
+      color: #f1f1f1;
+   }
+  .mobile-navbar  .sidenav a:hover {
+      color: #818181;
+   }
+    
+   .mobile-navbar .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+   } 
+    
 
    .main-content{
       padding: 20px !important;
@@ -119,6 +153,12 @@
    .custom-new .custom-label-one {
       transform: translate(-69px, -334px) !important;
    }
+   /* .custom-new p {
+      line-height: 1 !important;
+   } */
+   .custom-new .custom-text-bold {
+      line-height: 1.5 !important;
+   }
    .custom-text-bold {
       margin-bottom: 5px;
    }
@@ -191,12 +231,12 @@
    .similar-hover1 .fa-user{
       transform: translate(44px, -5px) !important;
       font-size: 18px !important;
-      margin-right: 13px;
+      margin-right: 5px;
    }
    .similar-hover2 .fa-bag-shopping{
       transform: translate(39px, -5px) !important;
       font-size: 12px !important;
-      margin-right: 28px;
+      margin-right: 40px;
    }
    /* optional choose */
    /* .similar-hover2 .translate-middle {
@@ -357,9 +397,12 @@
 
 .main-content {
    position: relative;
-   transform: translate(0px, -330px);
+   transform: translate(260px, -330px);
    z-index: 1;
-   overflow: hidden;
+   text-align: center;
+   width: 700px;
+   height: 700px;
+   overflow: auto;
 }
 .main-content .btn-custom {
    width: 120px;
@@ -469,7 +512,7 @@ footer {
 }
 
 /* side navigation */
-.sidenav {
+.bar-toggle .sidenav {
    height: 100%;
    width: 0;
    position: fixed;
@@ -481,7 +524,7 @@ footer {
    transition: 0.5s;
    padding-top: 60px;
 }
-.sidenav a {
+.bar-toggle .sidenav a {
    /* padding: 8px 8px 8px 32px;
     */
    text-align: center;
@@ -491,11 +534,11 @@ footer {
    transition: 0.3s;
    color: #f1f1f1;
 }
-.sidenav a:hover {
+.bar-toggle .sidenav a:hover {
    color: #818181;
 }
  
-.sidenav .closebtn {
+.bar-toggle .sidenav .closebtn {
    position: absolute;
    top: 0;
    right: 25px;
