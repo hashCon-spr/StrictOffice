@@ -65,8 +65,8 @@
                <button class="text-dark btn defaultNavMobile" onclick="openNav()"><i class="fa-solid fa-bars" style="transform: translate(-20px, -20px); font-size: 25px; margin-top: 40px;"></i></button>
             </div>
             <div class="mobile-navbar" id="mobile-navbar">
-               <div id="Sidenav" class="sidenav">
-                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <div id="MobileSidenav" class="mobile-sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin: 0px;">&times;</a>
                   <a href="#" onclick="clickedNav()" class="clicked">Home</a>
                   <a href="#products" class="clicked" onclick="clickedNav()">Products</a>
                   <a href="#category" class="clicked" onclick="clickedNav()">Category</a>
@@ -78,10 +78,10 @@
          </header>
 
       <!-- begin main content -->
-      <section class="" style="transform: translateY(50px);">
+      <section class="blob-content" style="transform: translateY(50px);">
          <!-- start shorting -->
          <div class="d-inline">
-            <button type="button" class="fw-bold" style="border: 1px solid #F1F5F8; margin-left: 90px; border-radius: 20px; padding: 12px; font-size: 13px;">Short: Recommendation <span class="" style="margin-left: 7px;"><i class="fa-solid fa-angle-down"></i></span> </button>
+            <button type="button" class="fw-bold" style="border: 1px solid #F1F5F8; margin-left: 90px; border-radius: 20px; padding: 12px; font-size: 13px;" id="short-filter">Short: Recommendation <span class="" style="margin-left: 7px;"><i class="fa-solid fa-angle-down"></i></span> </button>
             <button type="button" class="fw-bold" style="border: 1px solid #F1F5F8; margin-left: 20px; border-radius: 20px; padding: 12px; font-size: 13px;">Filter <span class="" style="margin-left: 7px;"><i class="fa-solid fa-sliders"></i></span> </button>
          </div>
          <!-- end shorting  -->

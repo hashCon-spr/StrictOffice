@@ -7,18 +7,31 @@
    
 }
 
-@media screen and (min-width: 200px) and (max-width: 300px)
+@media screen and (min-width: 390px) and (max-width: 390px)
 {
-   #mobile-navbar .fa-bars {
-      transform: translateX(10px) !important;
+   .category-content {
+      margin-left: 65px !important;
    }
-   /* .similar-hover2 .fa-bag-shopping {
-      transform: translateX(-10px) !important;
+   .discount-box {
+      margin-left: 45px !important;
    }
-   .similar-hover1 .fa-user {
-      transform: translateX(10px) !important;
-      margin-right: 70px !important;
+   .similar-hover2 .fa-bag-shopping {
+      transform: translateX(45px) !important;
+      margin-left: 3px;
+   }
+   /* .simnilar-hover1 .fa-user {
+      margin-left: 5px !important;
    } */
+
+   #short-filter {
+      width: 200px;
+      transform: translate(20px, 45px);
+
+   }
+   .blob-content {
+      margin-left: 5px;
+   }
+
 }  
 
 @media screen and (min-width: 310px) and (max-width: 400px)  
@@ -39,43 +52,51 @@
       transform: translate(-5px, 30px);
       font-size: 15px;
    }
-   .mobile-navbar .sidenav {
+   .mobile-navbar .mobile-sidenav {
       height: 100%;
       width: 0;
       position: fixed;
-      z-index: 100;
+      z-index: 1;
       top: 0;
       right: 0;
       background-color: #111;
       overflow-x: hidden;
       transition: 0.5s;
       padding-top: 60px;
-   }
-   .mobile-navbar .sidenav a {
-      /* padding: 8px 8px 8px 32px;
-       */
       text-align: center;
+      transform: translate(40px, -40px);
+    }
+    
+    .mobile-navbar .mobile-sidenav a {
+      padding: 8px 8px 8px 32px;
       text-decoration: none;
-      font-size: 20px;
+      line-height: 1;
+      font-size: 18px;
+      color: #818181;
       display: block;
       transition: 0.3s;
-      color: #f1f1f1;
-   }
-  .mobile-navbar  .sidenav a:hover {
-      color: #818181;
-   }
+      margin-left: 50px;
+    }
     
-   .mobile-navbar .sidenav .closebtn {
+    .mobile-navbar .mobile-sidenav a:hover{
+      color: #f1f1f1;
+    }
+    
+    .mobile-navbar .mobile-sidenav .closebtn {
       position: absolute;
+      color: black;
       top: 0;
       right: 25px;
       font-size: 36px;
       margin-left: 50px;
-   } 
+      margin-right: 20px;
+      margin-top: 25px;
+    }
     
 
    .main-content{
       padding: 20px !important;
+      position: relative;
       transform: translate(5px, -400px) !important;
    }
    .main-content h1 {
@@ -86,7 +107,7 @@
    }
    
    .category-content {
-      margin-left: 65px;
+      margin-left: 58px;
    }
    .category-text {
       text-align: center;
@@ -150,9 +171,9 @@
       box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
    } 
 
-   .custom-new .custom-label-one {
+   /* .custom-new .custom-label-one {
       transform: translate(-69px, -334px) !important;
-   }
+   } */
    /* .custom-new p {
       line-height: 1 !important;
    } */
@@ -169,7 +190,14 @@
       height: 1450px;
    }
    #products .custom-label-one {
-      transform: translate(-1px, -355px) !important;
+      transform: translate(-1px, -366px) !important;
+   }
+   #products .custom-label-two {
+      transform: translate(0px, -410px) !important; 
+   }
+   #products .custom-label-three {
+      transform: translate(0px, -387px) !important; 
+      
    }
     
 
@@ -234,9 +262,9 @@
       margin-right: 5px;
    }
    .similar-hover2 .fa-bag-shopping{
-      transform: translate(39px, -5px) !important;
+      transform: translate(40px, -5px) !important;
       font-size: 12px !important;
-      margin-right: 40px;
+      margin-right: 25px;
    }
    /* optional choose */
    /* .similar-hover2 .translate-middle {
@@ -254,7 +282,7 @@
       width: 320px;
       height: 420px;
       margin-bottom: 30px;
-      transform: translateX(-5px);
+      transform: translateX(-10px);
    }
    .discount-box p {
       text-align: justify;
@@ -321,6 +349,17 @@
       transform: translate(10px, -1230px) !important;
    }
 
+   /* footer */
+   footer {
+      width: 100%;
+      font-size: 12px;
+   }
+
+   /* more-content */
+   .more-content .more-main-content {
+      margin-left: 10px;
+   }
+
 
 }
 
@@ -377,7 +416,7 @@
    margin-top: 25px;
    margin-left: 90px !important;
 }
-.search-bar input {
+.input-navbar {
    border: none;
    outline-offset: none;
    outline-width: none;
@@ -397,12 +436,9 @@
 
 .main-content {
    position: relative;
-   transform: translate(260px, -330px);
+   transform: translate(0px, -380px);
    z-index: 1;
    text-align: center;
-   width: 700px;
-   height: 700px;
-   overflow: auto;
 }
 .main-content .btn-custom {
    width: 120px;
@@ -488,7 +524,6 @@ footer {
 .img-fill {
    padding: 10px;
 }
-
 
 .products-content {
    margin-bottom: 200px;

@@ -74,13 +74,15 @@ function closeNav() {
 }
 
 // open nav mobile
+function closeMobileNav()
+{
+   document.getElementById("MobileSidenav").style.width = "0";
+   document.body.style.backgroundColor = "#ffff";
+}
 function OpenNavMobile()
 {
-   document.querySelector(".mobile-navbar .sidenav").style.overflow = "auto";
-   document.querySelector(".mobile-navbar .sidenav").style.width = "100%";
-   document.querySelector(".mobile-navbar .sidenav").style.height = "100%";
-
-
+   document.getElementById("MobileSidenav").style.width = "500px";
+   document.getElementById("MobileSidenav").style.height = "1000px";
    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 

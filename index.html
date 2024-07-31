@@ -15,7 +15,9 @@
       <script>
          document.addEventListener("DOMContentLoaded", function() {
             HandleWindow();
-            // $("body").removeClass(".modal");
+
+            // $(".main-content").hide();
+
          });
 
          // window.addEventListener("resize", () => {
@@ -26,51 +28,22 @@
             console.log(window.innerWidth)
             if(window.innerWidth < 900)
             {
-               $(".mobile-navbar").ajaxSend()
-               $("#bar-toggle").remove();
+               $(".mobile-navbar").show();
+               $("#bar-toggle").hide();
                $("#search-bar").hide();
                $(".defaultNav").hide();
                $(".similar-hover1").show();
                $(".similar-hover2").show();
                $(".fa-magnifying-glass").hide();
                $(".fa-microphone").hide();
-               console.log("mobile layout");
             }
             else {
                $("#bar-toggle").show();
                $("#search-bar").show();
                $(".mobile-navbar").hide();
                $(".defaultNav").show();
-               console.log("default layout");
             }
          }
-
-         // const modal = `
-         //    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-         //    <div class="modal-dialog">
-         //       <div class="modal-content">
-         //          <div class="modal-header">
-         //          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-         //          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-         //          </div>
-         //          <div class="modal-body">
-         //          ...
-         //          </div>
-         //          <div class="modal-footer">
-         //          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-         //          <button type="button" class="btn btn-primary">Save changes</button>
-         //          </div>
-         //       </div>
-         //    </div>
-         //    </div>
-         // `;
-
-         // function VoiceActive() 
-         // {
-         //    $("body").append(modal);
-         //    console.log("hello world");
-         // }
-
       </script>
       <header id="header">
       <div class="nav-position d-flex justify-content-around">
@@ -101,12 +74,16 @@
             <button class="text-dark btn defaultNav" onclick="openNav()"><i class="fa-solid fa-bars" style="transform: translate(-20px, -19px); font-size: 23px; margin-top: 40px;"></i></button>
          </div>
          <div class="mobile-navbar" id="mobile-navbar">
-            <div id="Sidenav" class="sidenav">
-               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-               <a href="#" onclick="clickedNav()" class="clicked">Home</a>
-               <a href="#products" class="clicked" onclick="clickedNav()">Products</a>
-               <a href="#category" class="clicked" onclick="clickedNav()">Category</a>
-               <a href="#" class="clicked" onclick="clickedNav()">More And Inspiration</a>
+            <div id="MobileSidenav" class="mobile-sidenav">
+               <div class="side-component">
+                  <button type="button" class="" style="position: absolute; z-index: 100; transform: translate(60px, -5px);"><i class="fa-solid fa-magnifying-glass text-dark" style="font-size: 20px; display: block;"></i></button>
+                  <input type="text" class="input-navbar" style="background-color: #E1E5ED; width: 350px; color: black; height: 40px; transform: translate(38px, -25px); padding-left: 1%; position: relative; margin-bottom: 0px;" placeholder="Search..." />
+               </div>
+               <a href="javascript:void(0)" class="closebtn" onclick="closeMobileNav()">&times;</a>
+               <a href="#" class="clicked">Home</a>
+               <a href="#products" class="clicked">Products</a>
+               <a href="#category" class="clicked">Category</a>
+               <a href="#" class="clicked">More And Inspiration</a>
              </div>
             <button class="btn" onclick="OpenNavMobile()"><i class="fa-solid fa-bars" style="margin-top: 45px;" id="fa-bars"></i></button>
          </div>
@@ -142,18 +119,20 @@
 
       <!-- begin content -->
         <div class="main-content">
-          <h1 class="text-white fs-3x">Welcome to FURNISE INDONESIA</h1>
-          <p class="text-white fs-5">PT FURNISE is provide furnitures that our focused</p>
-          <p class="text-white fs-5" style="transform: translateY(-19px);">we commitee for to maintain our quality</p>
-          <div class="d-flex justify-content-center">
-            <button class="btn-custom btn">Read More</button>
-          </div>
+         <div class="text-content">
+            <h1 class="text-white fs-3x">Welcome to FURNISE INDONESIA</h1>
+            <p class="text-white fs-5">PT FURNISE is provide furnitures that our focused</p>
+            <p class="text-white fs-5" style="transform: translateY(-19px);">we commitee for to maintain our quality</p>
+            <div class="d-flex justify-content-center">
+              <button class="btn-custom btn">Read More</button>
+            </div>
+         </div>
         </div>
       <!-- end content -->
 
 
        <!-- begin carosuel -->
-       <div id="carouselExampleIndicators" class="carousel carosuel-dark slide carosuel-part" style="margin-bottom: 100px; transform: translateY(-200px); width: 100%;">
+       <div id="carouselExampleIndicators" class="carousel carosuel-dark slide carosuel-part" style="transform: translateY(-200px); width: 100%;">
          <div class="carousel-indicators">
            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -199,7 +178,7 @@
                               <div class="" style="transform: translateY(-18px);">
                                  <button type="button" class="btn btn-sm btn-danger text-white d-inline"><i class="fa-solid fa-circle-info"></i> More</button>
                                  <button type="button" class="btn btn-sm bg-black text-white"><i class="fa-solid fa-bag-shopping"></i></button>
-                                 <span class="fs-4"><i class="fa-regular fa-heart" id="likeComponent"></i></span>
+                                 <span class="fs-4 text-secondary"><i class="fa-regular fa-heart" id="likeComponent"></i></span>
                               </div>
                               <span style="width: 100px; height: 30px; color: white; z-index: 100; transform: translate(5px, -400px); position: fixed; text-align: center; border: none;" class="bg-danger custom-label-one">𝙽𝚎𝚠</span>
                            </div>
@@ -213,9 +192,9 @@
                               <div class="" style="transform: translateY(-18px);">
                                  <button type="button" class="btn btn-sm btn-danger text-white d-inline"><i class="fa-solid fa-circle-info"></i> More</button>
                                  <button type="button" class="btn btn-sm bg-black text-white"><i class="fa-solid fa-bag-shopping"></i></button>
-                                 <span class="fs-4"><i class="fa-regular fa-heart" id="likeComponent"></i></span>
+                                 <span class="fs-4 text-secondary"><i class="fa-regular fa-heart" id="likeComponent"></i></span>
                               </div>
-                              <span style="width: 100px; height: 30px; color: white; z-index: 100; transform: translate(0px, -401px); position: fixed; text-align: center; border: none;" class="bg-danger">𝙽𝚎𝚠</span>
+                              <span style="width: 100px; height: 30px; color: white; z-index: 100; transform: translate(0px, -401px); position: fixed; text-align: center; border: none;" class="bg-danger custom-label-two">𝙽𝚎𝚠</span>
                            </div>
                         </div>
                         <div class="col-md-4 p-com">
@@ -227,9 +206,9 @@
                               <div class="" style="transform: translateY(-18px);">
                                  <button type="button" class="btn btn-sm btn-danger text-white d-inline"><i class="fa-solid fa-circle-info"></i> More</button>
                                  <button type="button" class="btn btn-sm bg-black text-white"><i class="fa-solid fa-bag-shopping"></i></button>
-                                 <span class="fs-4"><i class="fa-regular fa-heart" id="likeComponent"></i></span>
+                                 <span class="fs-4 text-secondary"><i class="fa-regular fa-heart" id="likeComponent"></i></span>
                               </div>
-                              <span style="width: 100px; height: 30px; color: white; z-index: 100; transform: translate(0px, -380px); position: fixed; text-align: center; border: none;" class="bg-danger custom-label-one">𝙽𝚎𝚠</span>
+                              <span style="width: 100px; height: 30px; color: white; z-index: 100; transform: translate(0px, -380px); position: fixed; text-align: center; border: none;" class="bg-danger custom-label-one custom-label-three">𝙽𝚎𝚠</span>
                            </div>
                         </div>
                      </div>
@@ -391,12 +370,12 @@
            <div class="more-main-content p-5">
                <div class="row main-more">
                   <div class="col-md-6">
-                     <img style="" id="img-more" src="https://activfurniture.com/wp-content/plugins/wpbingo/lib/lookbook/images/bwp_lookbook/Set_No._1_FORTE_SCL_90B,_SWB_90,_FC_40B,_VINO_MTB_120_&_KENT_104_(REV).jpg" width="500" height="500" />
+                     <img class="rounded border border-dark-subtle" id="img-more" src="https://activfurniture.com/wp-content/plugins/wpbingo/lib/lookbook/images/bwp_lookbook/Set_No._1_FORTE_SCL_90B,_SWB_90,_FC_40B,_VINO_MTB_120_&_KENT_104_(REV).jpg" width="500" height="500" />
                      <p class="text-secondary pt-1 fw-bold">every experience in build for familiy, peace in room available!</p>
                      <button type="button" class="btn btn-sm bg-dark text-white" style="width: 100px; transform: translateY(-5px);">Watch Now</button>
                   </div>
                   <div class="col-md-6 more-2">
-                     <img id="img-more" src="https://www.ikea.co.id/dairyfarm/id/static_content/content/images/cards/1716790233298.jpeg" width="500" height="500" />
+                     <img id="img-more" class="rounded border border-dark-subtle" src="https://www.ikea.co.id/dairyfarm/id/static_content/content/images/cards/1716790233298.jpeg" width="500" height="500" />
                      <p class="text-secondary pt-1 fw-bold">every experience in build for familiy, peace in room available!</p>
                      <button type="button" class="btn btn-sm bg-dark text-white" style="width: 100px; transform: translateY(-5px);">Watch Now</button>
                   </div>
